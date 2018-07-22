@@ -1,6 +1,3 @@
-#
-# to execute: julia 
-#
 using UnicodePlots
 lineplot([cos, sin], -pi/2, 2pi)
 
