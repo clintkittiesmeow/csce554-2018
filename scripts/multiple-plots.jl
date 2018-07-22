@@ -26,7 +26,10 @@ plot!(TDist(8));
 plot!(TDist(10))
 
 
-x = linspace(0.0, 5.0, 100.0);
+
+
+
+x = linspace(0.0, 5.0, 1000.0);
 F1 = pdf.(FDist(1, 1), x);
 F2 = pdf.(FDist(2, 1), x);
 F3 = pdf.(FDist(5, 2), x);
