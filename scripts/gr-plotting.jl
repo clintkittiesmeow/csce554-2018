@@ -1,5 +1,5 @@
 
-import GR
+using GR
 
 srand(0)
 xd = -2 + 4 * rand(100)
