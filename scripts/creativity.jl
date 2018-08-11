@@ -16,3 +16,9 @@ mean(extrinsic_arr)
 pvalue(test)
 pvalue(test, tail = :left)
 pvalue(test, tail = :right)
+
+using Distributions
+# compute one-sided p-value for a specific t-statistic
+pvalue_one_sided = 1 - cdf(TDist(45), 2.92)
+# compute two-sided p-value for a specific t-statistic
+pvalue_two_sided = 2 * pvalue_one_sided
